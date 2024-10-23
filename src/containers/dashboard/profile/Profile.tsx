@@ -97,7 +97,7 @@ export default function Profile({ user }: { user: usersDataType }) {
                   router.push("/dashboard/edit-profile");
                 }}
               >
-                Doctor's Profile
+                Doctors Profile
               </div>
             </DropdownItem>
             <DropdownItem
