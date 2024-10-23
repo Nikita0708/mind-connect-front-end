@@ -88,7 +88,7 @@ export default function Profile({ user }: { user: usersDataType }) {
                   router.push(`/dashboard/doctor/${user.id}`);
                 }}
               >
-                My Profile
+                Social Profile
               </div>
             </DropdownItem>
             <DropdownItem key="extanded">
@@ -97,7 +97,7 @@ export default function Profile({ user }: { user: usersDataType }) {
                   router.push("/dashboard/edit-profile");
                 }}
               >
-                Edit Detailes
+                Doctor's Profile
               </div>
             </DropdownItem>
             <DropdownItem

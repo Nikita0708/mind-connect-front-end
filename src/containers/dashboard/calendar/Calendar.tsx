@@ -17,7 +17,9 @@ import {
   ModalContent,
   ModalFooter,
   ModalHeader,
+  Popover,
   ScrollShadow,
+  Tooltip,
   useDisclosure,
 } from "@nextui-org/react";
 import { useEffect, useState } from "react";
@@ -97,13 +99,13 @@ export default function Calendar() {
             maxValue={today(getLocalTimeZone())}
           />
           <button className="cursor-pointer" onClick={handlePrevCalendar}>
-            <Icon path="arrow-left.svg" />
+            <Icon path="/arrow-left.svg" />
           </button>
           <button
             className="rotate-180 cursor-pointer"
             onClick={handleNextCalendar}
           >
-            <Icon path="arrow-left.svg" />
+            <Icon path="/arrow-left.svg" />
           </button>
         </div>
       </CardHeader>
@@ -166,10 +168,15 @@ export default function Calendar() {
 
                   <DropdownMenu>
                     <DropdownItem key="evaluate">
-                      <div className="flex gap-1">
-                        <Icon path="icons/smile.svg" />
-                        <span>Evaluate your current condition</span>
-                      </div>
+                      <Tooltip
+                        content="In development mode..."
+                        placement="right"
+                      >
+                        <div className="flex gap-1">
+                          <Icon path="icons/smile.svg" />
+                          <span>Evaluate your current condition</span>
+                        </div>
+                      </Tooltip>
                     </DropdownItem>
                     <DropdownItem key="add-note" onClick={onOpen}>
                       <div className="flex gap-1">

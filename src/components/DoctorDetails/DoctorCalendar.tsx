@@ -80,8 +80,7 @@ export default function DoctorCalendar({
 
   useEffect(() => {
     checkErrorMessageTime(newTime);
-  }, [newTime])
-  
+  }, [newTime]);
 
   useEffect(() => {
     if (doctorId) {
@@ -223,7 +222,7 @@ export default function DoctorCalendar({
             <div className="flex gap-3">
               <button onClick={handlePreviousWeek}>
                 <Icon
-                  path="arrow-left.svg"
+                  path="/arrow-left.svg"
                   className={`cursor-pointer ${
                     weekOffset > 0 ? "opacity-1" : "opacity-0"
                   }`}
@@ -232,7 +231,7 @@ export default function DoctorCalendar({
 
               <button onClick={handleNextWeek}>
                 <Icon
-                  path="arrow-left.svg"
+                  path="/arrow-left.svg"
                   className="rotate-180 cursor-pointer"
                 />
               </button>
