@@ -19,7 +19,9 @@ import {
   ModalBody,
   ModalContent,
   ModalHeader,
+  Popover,
   Textarea,
+  Tooltip,
   useDisclosure,
 } from "@nextui-org/react";
 import { useEffect, useState } from "react";
@@ -39,7 +41,7 @@ export default function Dashboard() {
           <h3 className="font-semibold text-[22px]">Dashboard</h3>
         </div>
         <div className="flex items-center gap-x-[30px]">
-          <Icon path="/icons/notifications.svg" className="cursor-pointer" />
+          <Icon path="/icons/notifications.svg" />
           <Profile user={user} />
         </div>
       </header>

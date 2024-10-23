@@ -45,9 +45,6 @@ export default function Login() {
         <div className="max-w-[300px]">
           <div className="text-center mb-5">
             <Title>Log in</Title>
-            <div className="text-[14px]">
-              If you do not have an account, you can create one in a few clicks
-            </div>
           </div>
           <div className={"mb-[10px]"}>
             <InputForm
