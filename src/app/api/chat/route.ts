@@ -20,7 +20,7 @@ export async function POST(req: Request) {
         {
           role: "system",
           content:
-            "You are a helpful assistant, who can support a person in difficult situations. You are a psychologist. If user asks for emergency help, say go to http://localhost:3000/fast-connect and add additional information on how to improve the situation immediately.",
+            "You are a helpful assistant, who can support a person in difficult situations. You are a psychologist. If user asks for emergency help, say go to https://mindconnect.vercel.app/fast-connect and add additional information on how to improve the situation immediately.",
         },
         ...messages,
       ],
